@@ -1,0 +1,67 @@
+.sidebar-parent {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  z-index: 99;
+  .sidebar-left {
+    width: 100%;
+    background: rgb(0, 69, 97);
+    height: 100%;
+    border-radius: 0px 10px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 10px 10px 10px;
+    gap: 80px;
+    position: relative;
+    &.active {
+      width: 70px;
+      .login-logo {
+        h3 {
+          display: none;
+        }
+      }
+    }
+    .list-menu {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      a {
+        color: white;
+        font-weight: 700;
+        transition: var(--trans);
+        &:hover {
+          color: var(--accent-yellow2);
+        }
+      }
+    }
+    .logout-btn {
+      width: fit-content;
+      background: white;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: var(--trans);
+      &:hover {
+        background: var(--accent-yellow2);
+        color: white;
+      }
+    }
+    .icon {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 50%;
+      right: -20px;
+      background: white;
+      padding: 10px;
+      border-radius: 50%;
+      border: 2px solid rgb(0, 69, 97);
+      svg {
+        fill: rgb(0, 69, 97);
+      }
+    }
+  }
+}

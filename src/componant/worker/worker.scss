@@ -1,0 +1,10 @@
+.table_parent{
+    padding:100px 10px;
+    width: calc(100% - 300px);
+    margin-left: 300px;
+    height:100vh;
+    background:rgb(245, 245, 245);
+    .table_cont{
+      display: flex;align-items: center;justify-content: center;
+    }
+}

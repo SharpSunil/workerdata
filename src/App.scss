@@ -141,26 +141,12 @@ h6 {
 }
 
 
-::-webkit-scrollbar {
-  width: 5px;
-}
 
-::-webkit-scrollbar-track {
-  background-color: rgb(235, 235, 235);
-  border-radius: 10px;
-  border-radius: 100px !important;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--accent-yellow);
-  border-radius: 10px;
-}
 
 
 
 body {
-  -ms-overflow-style: scrollbar;
-  background: linear-gradient(45deg ,#cdcad3, #e5e4cf);
+//  overflow-x: hidden;
 
 
 }
@@ -207,17 +193,5 @@ body {
   }
 }
 
-
-.glass{
-  background: rgba(255, 255, 255, 0.247);
-  backdrop-filter: blur(5px);
-  border-radius: 10px;
-  border: none;
-  border: 1px solid white;
-
-  &.glow{
-    box-shadow: -10px 0px 350px white , 10px  0px 300px var(--accent-yellow);
-  }
-}
 
 

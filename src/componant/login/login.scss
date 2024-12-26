@@ -1,0 +1,62 @@
+.login-parent {
+  padding: 100px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f4f8;
+  min-height: 100vh;
+
+  .login-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+
+    .login-box {
+      width: 100%;
+
+      form {
+        display: flex;
+        flex-direction: column;
+
+        .input-box {
+          margin-bottom: 20px;
+          position: relative;
+          .eye-icon {
+            position: absolute;
+            right: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 10px;
+          }
+
+          input {
+            width: 100%;
+            padding: 10px 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+
+            &:focus {
+              border-color: #84befc;
+              outline: none;
+              box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+            }
+          }
+        }
+
+        .btn {
+          color: #fff;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
