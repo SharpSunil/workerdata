@@ -19,7 +19,7 @@ const Sidebar = () => {
           <div className="list-menu">
             {!open ? <Link to="#">Worker Profile</Link> : <FaUser />}
 
-            {!open ? <Link to="#">Add Worker Data</Link> : <FaUserPlus />}
+            {!open ? <Link to="/addworker">Add Worker Data</Link> : <FaUserPlus />}
             {!open ? <Link to="/workertable">All Workers</Link> : <FaUsers />}
           </div>
           {!open ? (
