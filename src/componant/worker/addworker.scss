@@ -24,6 +24,30 @@
             }
            
         }
+        .first-group2{
+
+          display: flex;
+          align-items: center;justify-content: center;
+          label{
+            width: 25%;
+          }
+          input{
+            width: 75%;
+            margin-top:15px;
+          }
+        }
+        .first-group3{
+
+          display: flex;
+          align-items: center;justify-content: center;
+          label{
+            width: 40%;
+          }
+          input{
+            width:60%;
+            margin-top:15px;
+          }
+        }
       }
       textarea{
         border-radius: 5px;
