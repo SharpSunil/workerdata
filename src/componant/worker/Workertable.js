@@ -3,29 +3,28 @@ import "./worker.scss";
 import { Table as AntTable } from "antd";
 import axios from "axios";
 const Workertable = () => {
-  const [worker, setWorker] = useState([]);
-
-  const handlesetWorker = async () => {
+  const [workerdata, setWorkerdata] = useState([]);
+  const handleworkerdata = async () => {
     try {
       const response = await axios.get(
         `${process.env.REACT_APP_API_URL}/worker/viewworker`
       );
-
-      setWorker(response.data.data);
-    
-      
-     
+      setWorkerdata(response.data.data);
+      // console.log(response.data.data, "sfdkljjhfsdjksdfjkh")
     } catch (error) {
       console.log(error);
     }
   };
-useEffect (()=>{
-  handlesetWorker();
-},[])
-
-
-
+  useEffect(() => {
+    handleworkerdata();
+  });
   const columns = [
+    {
+      title: "SR.NO.",
+      dataIndex: "srno",
+      key: "srno",
+      render: (_, __, index) => index + 1,
+    },
     {
       title: "Worker Name",
       dataIndex: "worker_name",
@@ -95,13 +94,12 @@ useEffect (()=>{
 
   // Define the data for the table
 
-
   return (
     <div className=" table_parent parent">
       <div className="cont table_cont">
         <AntTable
           columns={columns}
-          dataSource={worker}
+          dataSource={workerdata}
           pagination={{ pageSize: 10 }}
           rowClassName="editable-row"
           scroll={{ x: "max-content" }}

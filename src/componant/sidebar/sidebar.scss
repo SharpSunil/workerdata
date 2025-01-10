@@ -15,13 +15,15 @@
     padding: 100px 10px 10px 10px;
     gap: 80px;
     position: relative;
+    .login-logo {
+      h3 {
+        // display: none;
+        color:white;
+      }
+    }
     &.active {
       width: 70px;
-      .login-logo {
-        h3 {
-          display: none;
-        }
-      }
+    
     }
     .list-menu {
       display: flex;
